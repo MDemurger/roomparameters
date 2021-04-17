@@ -6,7 +6,7 @@ Features :
 - Room acoustics parameters (EDT,T15,T30,C50,C80, D50)
 - Impulse to Noise Ratio (INR)
 - Schroeder integration on valid part of the impulse (using Lundeby method)
-- Energy decay curves plotting on each frequency band.
+- Energy decay curves plot on each frequency band.
 
 The projet only implements 3rd order bandpass filtering for each octave bands which is probably not enough according to the standards. I will fix this in future commits.
 
