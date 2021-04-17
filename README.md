@@ -1,6 +1,6 @@
 # roomparameters
 
-Simple GUI app that extract room acoustics parameters from an Impulse Response (IR) measurements. This project is made as an educationnal projet and as not been correctly tested yet. Please use with caution.
+Simple GUI app that extract room acoustics parameters from an Impulse Response (IR) measurement. This project is made as an educationnal projet and as not been correctly tested yet. Please use with caution.
 
 Features :
 - Acoustical parameters (EDT,T15,T30,C50,C80, D50)
