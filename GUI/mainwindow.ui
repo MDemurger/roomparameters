@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>951</width>
+    <height>804</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>951</width>
+    <height>804</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>951</width>
+    <height>804</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Room parameters</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>761</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="RoomWidget" name="room_display" native="true"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>430</y>
+      <width>741</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>INR</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>EDT</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>T15</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>T30</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>C50</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>C80</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>D50</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>125</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>250</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>500</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>1k</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>2k</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>4k</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>8k</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>20</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo_freq">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>161</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>125</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>250</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1k</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2k</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4k</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8k</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Frequency band</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_schro">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Schroeder</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="import_button">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>10</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Import (.WAV)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="OpenImpulse">
+   <property name="text">
+    <string>Impulse Response (.WAV)</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RoomWidget</class>
+   <extends>QWidget</extends>
+   <header>GUI/widgets/roomwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
